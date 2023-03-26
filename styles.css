@@ -1,0 +1,176 @@
+head,
+body {
+  margin: 0%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > div:nth-child(n) {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 210px;
+  padding-right: 210px;
+}
+
+.top,
+.intro {
+  display: flex;
+  background-color: #1f2937;
+}
+
+.quote {
+  padding: 20px;
+  background-color: #e5e7eb;
+}
+
+.top,
+.intro > * {
+  color: #f9faf8;
+}
+
+.intro > .intro-text > p > a {
+  text-decoration: none;
+  color: hotpink;
+}
+
+.top {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.top > div {
+  /* border: 2px solid red; */
+  padding: 10px;
+}
+
+.intro {
+  height: 327px;
+  justify-content: space-between;
+}
+
+.intro > .intro-text,
+.intro > img {
+  padding: 10px;
+  /* border: 2px solid red; */
+  flex: 1 1 0;
+  min-width: 300px;
+}
+
+/* .intro > .intro-text {
+  
+} */
+
+.intro > .intro-text > div {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.intro > img {
+  object-fit: cover;
+  /* need to make image shrink in flexbox */
+  width: 100%;
+  height: auto;
+}
+
+.hflex {
+  display: flex;
+  gap: 12px;
+  font-weight: lighter;
+}
+
+body > .container > .quote {
+  padding: 17px 275px;
+}
+
+.quote > .quote-content {
+  text-align: justify;
+  font-style: italic;
+  font-size: 29px;
+  color: #1f2937;
+}
+
+.quote > .quoted-by {
+  font-weight: bolder;
+  font-size: 21px;
+  color: #1f2937;
+  text-align: end;
+}
+
+.sign-up-button {
+  border-radius: 6px;
+  background-color: #3882f6;
+  color: #f9faf8;
+  padding: 7px;
+  width: 70px;
+  height: 19px;
+  text-align: center;
+  text-decoration: none;
+}
+
+body > .container > .sign-up > div {
+  border-radius: 10px;
+  background-color: #3882f6;
+  padding: 15px 65px;
+  color: #f9faf8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body > .container > .sign-up > div > div > div:nth-child(1) {
+  font-size: 19pt;
+  font-weight: 600;
+}
+
+body > .container > .sign-up > div > div > div:nth-child(2) {
+  font-size: 12pt;
+  font-weight: 200;
+}
+
+body > .container > .sign-up > div > .sign-up-button {
+  border: 2px solid #f9faf8;
+}
+
+.curated-info > div {
+  font-size: 34px;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.curated-infos {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.curated-info > .curated-infos > div > img {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  max-width: 180px;
+  /* height: auto; */
+  border-radius: 10%;
+  border: 5px solid #3882f6;
+  object-fit: cover;
+}
+
+.curated-info > .curated-infos > div > div {
+  font-size: 15pt;
+  font-weight: 400;
+  text-align: center;
+}
+
+.container > #copyright {
+  color: #f9faf8;
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 34px;
+  padding-left: 210px;
+  padding-right: 210px;
+  background-color: #1f2937;
+}
